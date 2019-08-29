@@ -1,0 +1,10 @@
+How to run Maven Project from CMP?
+1. Download Maven for Windows bin.zip file
+2. Set the Maven_Home in the Env variables(copy the maven path and paste it in the 
+variable value and set the bin path in the path field)
+3.Open command prompt and type mvn -version=> enter.
+4. Type cd => location of the maven project=> enter
+5. Type mvn clean install=> enter
+6. Create a batch file in the project folder(create a text folder and save as run.bat
+and type cd location of the project=> enter
+type mvn clean install=> enter)

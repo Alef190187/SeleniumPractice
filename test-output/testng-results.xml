@@ -1,0 +1,14 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite">
+    <groups>
+    </groups>
+    <test name="Test">
+      <class name="seleniumPractice.JenkinsDemoJobs">
+        <test-method status="PASS" signature="jenkinsJob()" name="jenkinsJob" duration-ms="8620" started-at="2019-08-24T20:53:15Z" finished-at="2019-08-24T20:53:23Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
