@@ -6,7 +6,7 @@
     </groups>
     <test name="Test">
       <class name="seleniumPractice.JenkinsDemoJobs">
-        <test-method status="PASS" signature="jenkinsJob()" name="jenkinsJob" duration-ms="8620" started-at="2019-08-24T20:53:15Z" finished-at="2019-08-24T20:53:23Z">
+        <test-method signature="jenkinsJob()" started-at="2019-09-16T21:16:01Z" name="jenkinsJob" finished-at="2019-09-16T21:16:17Z" duration-ms="15380" status="PASS">
         </test-method>
       </class>
     </test>
