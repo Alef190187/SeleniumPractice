@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
 
 public class JavaScriptExecutor {
 	
@@ -14,11 +14,11 @@ public class JavaScriptExecutor {
 	
 	public static void main(String [] args) throws InterruptedException {
 		
-		//System.setProperty("webdriver.chrome.driver", "C:\\\\SeleniumDocuments\\\\WebDriver\\\\chromedriver_win32 (1)\\\\chromedriver.exe");
-		System.setProperty("webdriver.gecko.driver", "C:\\SeleniumDocuments\\WebDriver\\geckodriver\\geckodriver.exe");
-
+		System.setProperty("webdriver.chrome.driver", "C:\\\\SeleniumDocuments\\\\WebDriver\\\\chromedriver_win32 (1)\\\\chromedriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "C:\\SeleniumDocuments\\WebDriver\\geckodriver\\geckodriver.exe");
+		WebDriver driver = new ChromeDriver();
 		
-		WebDriver driver = new FirefoxDriver();
+		//WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -28,6 +28,7 @@ public class JavaScriptExecutor {
 		
 		js.executeScript("document.querySelector('#loginForm > div > input:nth-child(1)').value='Alef190187'" );
 		js.executeScript("document.querySelector('#loginForm > div > input:nth-child(2)').value='Au2155941186'");
+		
 		js.executeScript("document.querySelector('#loginForm > div > div > input').click()" );
 		//get title of the page
 		String title = js.executeScript("return document.title").toString();

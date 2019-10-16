@@ -7,7 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/Users/alef1/Desktop/A L I F/Selenium Files/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
-	<classpathentry kind="lib" path="C:/Users/alef1/Desktop/A L I F/Selenium Files/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/alef1/Desktop/A L I F/Selenium Files/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
 	<classpathentry kind="lib" path="C:/Users/alef1/Desktop/A L I F/Selenium Files/selenium-java-3.141.59/libs/commons-exec-1.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/alef1/Desktop/A L I F/Selenium Files/selenium-java-3.141.59/libs/guava-25.0-jre.jar"/>
@@ -56,5 +55,10 @@
 	<classpathentry kind="lib" path="C:/Users/alef1/Desktop/A L I F/Selenium Files/ApachePoiJars/commons-io-2.6/commons-io-2.6-tests.jar"/>
 	<classpathentry kind="lib" path="C:/Users/alef1/Desktop/A L I F/Selenium Files/ApachePoiJars/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/SeleniumDocuments/Selenium/Selenium.JarFiles/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="C:/SeleniumDocuments/WebDriver/htmlunit-driver-2.36.0.jar" sourcepath="src"/>
+	<classpathentry kind="lib" path="C:/SeleniumDocuments/WebDriver/htmlunit-driver-2.35.1-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="C:/SeleniumDocuments/jdk-11.0.1/lib/src.zip"/>
+	<classpathentry kind="lib" path="C:/SeleniumDocuments/jdk-11.0.1/lib/jrt-fs.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
