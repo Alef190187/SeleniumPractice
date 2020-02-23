@@ -33,6 +33,7 @@ public class Headless {
 		  String text = alert.getText();
 		  System.out.println(text);
 		  alert.accept();
+		  //alert.dismiss();
 		  driver.close();
 		  
 		  System.out.println("Program is executed");

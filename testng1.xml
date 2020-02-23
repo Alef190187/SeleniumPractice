@@ -5,21 +5,21 @@
   <parameter name ="browserName" value ="firefox">
   </parameter>
     <classes>
-      <class name="seleniumPractice.IE_driverDemo"/>
+      <class name="seleniumPractice.CrossBrowserTesting"/>
     </classes>
   </test>
   <test name="TestOnIE">
   <parameter name ="browserName" value ="ie">
   </parameter>
     <classes>
-      <class name="seleniumPractice.IE_driverDemo"/>
+      <class name="seleniumPractice.CrossBrowserTesting"/>
     </classes>
   </test>
   <test name="TestOnChrome">
   <parameter name ="browserName" value ="chrome">
   </parameter>
     <classes>
-      <class name="seleniumPractice.IE_driverDemo"/>
+      <class name="seleniumPractice.CrossBrowserTesting"/>
     </classes>
   </test> 
   </suite>

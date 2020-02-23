@@ -39,7 +39,7 @@ public class BrokenLinkAndImages {
 		//list of all links+images
 		linkslist.addAll(driver.findElements(By.tagName("img")));
 		
-		System.out.println("total links and images ==>" +linkslist.size());
+		System.out.println("total links and images ==>" + linkslist.size());
 		 List<WebElement>activelinks = new ArrayList<WebElement>();
 		 //Filtering out active links with href.
 		 for(int i=0; i<linkslist.size(); i++) {

@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\alef1\eclipse-workspace\SeleniumPractice\testng1.xml</span>
+                    <span>C:\Users\alef1\SeleniumPractice\testng1.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="seleniumPractice.IE_driverDemo" hash-for-method="launchIETest">launchIETest</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="seleniumPractice.CrossBrowserTesting" hash-for-method="launchIETest">launchIETest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,10 +117,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">seleniumPractice.IE_driverDemo</span>
+              <img src="skipped.png"/>
+              <span class="class-name">seleniumPractice.CrossBrowserTesting</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -128,14 +128,35 @@
                   <a name="launchIETest">
                   </a> <!-- launchIETest -->
                   <span class="method-name">launchIETest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out waiting for page to load.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;LAPTOP-OFIJ2E99&apos;, ip: &apos;192.168.1.203&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:5362/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: a597c85d-9aba-476e-b923-8617464f68fa
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at seleniumPractice.CrossBrowserTesting.setUp(CrossBrowserTesting.java:41)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\alef1\eclipse-workspace\SeleniumPractice\testng1.xml</span>
+            <span class="header-content">C:\Users\alef1\SeleniumPractice\testng1.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,19 +166,19 @@
   &lt;test thread-count=&quot;3&quot; name=&quot;TestOnfirefox&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;seleniumPractice.IE_driverDemo&quot;/&gt;
+      &lt;class name=&quot;seleniumPractice.CrossBrowserTesting&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestOnfirefox --&gt;
   &lt;test thread-count=&quot;3&quot; name=&quot;TestOnIE&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;ie&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;seleniumPractice.IE_driverDemo&quot;/&gt;
+      &lt;class name=&quot;seleniumPractice.CrossBrowserTesting&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestOnIE --&gt;
   &lt;test thread-count=&quot;3&quot; name=&quot;TestOnChrome&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;seleniumPractice.IE_driverDemo&quot;/&gt;
+      &lt;class name=&quot;seleniumPractice.CrossBrowserTesting&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestOnChrome --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -206,13 +227,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'launchIETest')
-data.setCell(0, 2, 'seleniumPractice.IE_driverDemo')
-data.setCell(0, 3, 15);
+data.setCell(0, 2, 'seleniumPractice.CrossBrowserTesting')
+data.setCell(0, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -238,42 +259,46 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">seleniumPractice.IE_driverDemo</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">seleniumPractice.CrossBrowserTesting</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(firefox)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp(ie)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">launchIETest</span>
-                <span class="method-start">9571 ms</span>
+                <span class="method-start">7227 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9621 ms</span>
+                <span class="method-start">7258 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">launchIETest</span>
-                <span class="method-start">10618 ms</span>
+                <span class="method-start">55474 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10648 ms</span>
+                <span class="method-start">55496 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">launchIETest</span>
-                <span class="method-start">19584 ms</span>
+                <span class="method-start">75692 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">19604 ms</span>
+                <span class="method-start">75707 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

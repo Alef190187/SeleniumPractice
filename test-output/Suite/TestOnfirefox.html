@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 09 01:13:38 EDT 2019</td>
+<td>Started on:</td><td>Sat Feb 22 22:48:44 EST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25596 ms)</td>
+<tr><td>Total time:</td><td>41 seconds (41638 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,175 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='seleniumPractice.CrossBrowserTesting.setUp()'><b>setUp</b><br>Test class: seleniumPractice.CrossBrowserTesting<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 77
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;LAPTOP-OFIJ2E99&apos;, ip: &apos;192.168.1.203&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x010CEB13+1501971]
+	Ordinal0 [0x0104F6D1+980689]
+	Ordinal0 [0x00FD765F+489055]
+	Ordinal0 [0x00F6F2F4+62196]
+	Ordinal0 [0x00F6BCDA+48346]
+	Ordinal0 [0x00F89800+169984]
+	Ordinal0 [0x00F8942D+169005]
+	Ordinal0 [0x00F878EB+162027]
+	Ordinal0 [0x00F70AC7+68295]
+	Ordinal0 [0x00F71B40+72512]
+	Ordinal0 [0x00F71AD9+72409]
+	Ordinal0 [0x01068F37+1085239]
+	GetHandleVerifier [0x0116D7ED+503293]
+	GetHandleVerifier [0x0116D580+502672]
+	GetHandleVerifier [0x011746AC+531644]
+	GetHandleVerifier [0x0116DFFA+505354]
+	Ordinal0 [0x01060606+1050118]
+	Ordinal0 [0x0106047F+1049727]
+	Ordinal0 [0x0106AF9B+1093531]
+	Ordinal0 [0x0106B103+1093891]
+	Ordinal0 [0x0106A095+1089685]
+	BaseThreadInitThunk [0x76A06359+25]
+	RtlGetAppContainerNamedObjectPath [0x77937B74+228]
+	RtlGetAppContainerNamedObjectPath [0x77937B44+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at seleniumPractice.CrossBrowserTesting.setUp(CrossBrowserTesting.java:29)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1403303403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1403303403'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 77
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;LAPTOP-OFIJ2E99&apos;, ip: &apos;192.168.1.203&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x010CEB13+1501971]
+	Ordinal0 [0x0104F6D1+980689]
+	Ordinal0 [0x00FD765F+489055]
+	Ordinal0 [0x00F6F2F4+62196]
+	Ordinal0 [0x00F6BCDA+48346]
+	Ordinal0 [0x00F89800+169984]
+	Ordinal0 [0x00F8942D+169005]
+	Ordinal0 [0x00F878EB+162027]
+	Ordinal0 [0x00F70AC7+68295]
+	Ordinal0 [0x00F71B40+72512]
+	Ordinal0 [0x00F71AD9+72409]
+	Ordinal0 [0x01068F37+1085239]
+	GetHandleVerifier [0x0116D7ED+503293]
+	GetHandleVerifier [0x0116D580+502672]
+	GetHandleVerifier [0x011746AC+531644]
+	GetHandleVerifier [0x0116DFFA+505354]
+	Ordinal0 [0x01060606+1050118]
+	Ordinal0 [0x0106047F+1049727]
+	Ordinal0 [0x0106AF9B+1093531]
+	Ordinal0 [0x0106B103+1093891]
+	Ordinal0 [0x0106A095+1089685]
+	BaseThreadInitThunk [0x76A06359+25]
+	RtlGetAppContainerNamedObjectPath [0x77937B74+228]
+	RtlGetAppContainerNamedObjectPath [0x77937B44+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at seleniumPractice.CrossBrowserTesting.setUp(CrossBrowserTesting.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>14</td>
+<td>seleniumPractice.CrossBrowserTesting@32cf48b7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='seleniumPractice.CrossBrowserTesting.tearDown()'><b>tearDown</b><br>Test class: seleniumPractice.CrossBrowserTesting</td>
+<td></td>
+<td>-1582429739</td>
+<td>seleniumPractice.CrossBrowserTesting@32cf48b7</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,20 +244,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='seleniumPractice.IE_driverDemo.launchIETest()'><b>launchIETest</b><br>Test class: seleniumPractice.IE_driverDemo</td>
+<td title='seleniumPractice.CrossBrowserTesting.launchIETest()'><b>launchIETest</b><br>Test class: seleniumPractice.CrossBrowserTesting</td>
 <td></td>
 <td>0</td>
-<td>seleniumPractice.IE_driverDemo@4e4aea35</td></tr>
-<tr>
-<td title='seleniumPractice.IE_driverDemo.launchIETest()'><b>launchIETest</b><br>Test class: seleniumPractice.IE_driverDemo</td>
-<td></td>
-<td>0</td>
-<td>seleniumPractice.IE_driverDemo@32cf48b7</td></tr>
-<tr>
-<td title='seleniumPractice.IE_driverDemo.launchIETest()'><b>launchIETest</b><br>Test class: seleniumPractice.IE_driverDemo</td>
-<td></td>
-<td>0</td>
-<td>seleniumPractice.IE_driverDemo@5e57643e</td></tr>
+<td>seleniumPractice.CrossBrowserTesting@5e57643e</td></tr>
 </table><p>
 </body>
 </html>
